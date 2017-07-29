@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    We are using 62.5% so we can use 'rem' base units. We did this to take the base
+    font size of the browser which is 16 and convert it to into 10. This means
+    that now our base font size throughout the website is 10 rather than 16 which
+    is the regular default.    
+*/
+html {
+    font-size: 62.5%;
+}
+
+/*
+    The below font-size will display 16px assuming users are not zoomed in on their
+    browser.
+    Note: https://snook.ca/archives/html_and_css/font-size-with-rem
+*/
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $base-font-size;
+}
+
+h1 {
+    font-weight: 300;
+    margin-bottom: $space;
+}
+
+h2 {
+    font-size: $large-font-size;
+    margin-bottom: $space;
+}
+
+p {
+    margin-bottom: $space;
+}
+
+a {
+    color: black;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    border: 1px solid $input-border;
+    font-size: $base-font-size;
+    margin-bottom: $space;
+    padding: $input-spacing;
+}
