@@ -43,7 +43,7 @@ const onAuthChange = (isAuthenticated) => {
         should re-direct users to root path
     */
     if(isUnauthenticatedPage && isAuthenticated) {
-        browserHistory.replace('/dashbord');
+        browserHistory.replace('/dashboard');
     } else if(isAuthenticatedPage && !isAuthenticated) {
         browserHistory.replace('/');
     }
@@ -54,7 +54,8 @@ const routes = (
     <Router history={browserHistory}>
         <Route path='/' component={Login} onEnter={onEnterPublicPage}/>
         <Route path='/signup' component={Signup} onEnter={onEnterPublicPage}/>
-        <Route path='/dashbord' component={Dashbord} onEnter={onEnterPrivatePage}/>
+        <Route path='/dashboard' component={Dashbord} onEnter={onEnterPrivatePage}/>
+        <Route path='/dashboard/:id' component={Dashbord} onEnter={onEnterPrivatePage}/>
         <Route path='*' component={NotFound}/>
     </Router>
 );
