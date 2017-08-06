@@ -2,7 +2,6 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import expect from 'expect';
 import { mount } from 'enzyme';
-import moment from 'moment';
 
 import { NoteListHeader } from './NoteListHeader';
 
