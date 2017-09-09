@@ -19,6 +19,8 @@ html {
     Note: https://snook.ca/archives/html_and_css/font-size-with-rem
 */
 body {
+    background-color: $body-background-color;
+    color: $body-default-color;
     font-family: Helvetica, Arial, sans-serif;
     font-size: $base-font-size;
 }
@@ -38,7 +40,7 @@ p {
 }
 
 a {
-    color: black;
+    color: $body-default-color;
 }
 
 input[type=text], input[type=email], input[type=password] {

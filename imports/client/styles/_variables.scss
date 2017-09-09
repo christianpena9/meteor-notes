@@ -3,11 +3,15 @@
     us to reuse the same color everywhere or we can choose to have a different one.
 */
 // Colors
-$brand-primay: #5b4681;
+$brand-primay: #397ab1;
 $grey: #dddddd;
 $light-grey: #f9f9f9;
 $dark-grey: #777777;
 $error-message: red;
+
+// Body
+$body-background-color: #fafafa;
+$body-default-color: #333333;
 
 // Spacing
 $space: 1.4rem;
@@ -24,6 +28,7 @@ $input-spacing: 1rem;
 // Boxed View Variables
 $boxed-view-overlay-bg: $grey;
 $boxed-view-bg: #ffffff;
+$boxed-view-border-color: $grey;
 
 // Button
 $button-bg: $brand-primay;
