@@ -1,6 +1,7 @@
 .button {
     background-color: $button-bg;
     border: none;
+    border-radius: inherit;
     color: $button-color;
     cursor: pointer;
     font-size: $base-font-size;

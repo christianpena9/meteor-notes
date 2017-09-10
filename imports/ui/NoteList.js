@@ -22,7 +22,7 @@ export const NoteList = (props) => {
                 })
             }
             
-            Note List: { props.notes.length }
+            {/*Note List: { props.notes.length }*/}
         </div>
     );
 };
