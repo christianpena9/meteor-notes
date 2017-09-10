@@ -7,7 +7,7 @@ import Editor from './Editor';
 const Dashboard = () => {
     return (
         <div>
-            <PrivateHeader title="Dashbord"/>
+            <PrivateHeader title="Notes"/>
             <div className="page-content">
                 <div className="page-content__sidebar">
                     <NoteList />
